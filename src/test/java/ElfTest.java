@@ -3,11 +3,12 @@ import org.junit.jupiter.api.Test;
 
 import lotr.Hobbit;
 import lotr.Elf;
+import lotr.Character;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ElfTest {
-    private Elf character;
+    private Character character;
 
     @BeforeEach
     public void init() {

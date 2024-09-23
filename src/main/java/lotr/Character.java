@@ -10,7 +10,9 @@ public abstract class Character {
     private int power;
     private int hp;
     private KickStrategy kickStrategy;
-    // public abstract void kick(Character c);
+    public void kick(Character c) {
+        this.getKickStrategy().kick(c, this);
+    }
     public boolean isAlive(){
         return hp > 0;
     }
