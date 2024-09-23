@@ -1,13 +1,14 @@
 package lotr;
 
+import lotr.kickstrategy.ElfKick;
+
 public class Elf extends Character {
     public Elf(){
-        super(10, 10);
+        super(10, 10, new ElfKick());
     }
 
-    @Override
     public void kick(Character c) {
-        c.setHp(c.getHp() - this.getPower());
+        this.getKickStrategy().kick(c, this);
     }
     
 }

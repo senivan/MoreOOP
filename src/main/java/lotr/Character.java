@@ -10,7 +10,7 @@ public abstract class Character {
     private int power;
     private int hp;
     private KickStrategy kickStrategy;
-    public abstract void kick(Character c);
+    // public abstract void kick(Character c);
     public boolean isAlive(){
         return hp > 0;
     }
