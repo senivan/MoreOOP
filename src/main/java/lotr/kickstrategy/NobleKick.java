@@ -13,7 +13,7 @@ public class NobleKick implements KickStrategy {
     }
     @Override
     public void kick(Character whoKick, Character whoIsKick) {
-        whoKick.setHp(whoKick.getHp() - new Random().nextInt(min, max));
+        whoKick.setHp(whoKick.getHp() - ((int) ((Math.random() * (max - min)) + min)));
     }
     
 }
