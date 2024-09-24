@@ -11,7 +11,7 @@ class DemoTest {
         assertEquals("hello", "hello");
         Character character = CharacterFactory.createCharacter();
         assertNotNull(character);
-        assertEquals(character.toString(), character.toString());
+        assertEquals(character.toString(), character.toString()); 
         GameManager.fight(CharacterFactory.createCharacter(), CharacterFactory.createCharacter());
     }
 }
